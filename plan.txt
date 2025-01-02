@@ -1,0 +1,7 @@
+combined_keywords = dictionnaire de tuple :
+                                            clé = mot
+                                            valeur = (occurence / 3) arrondi au supérieur
+
+total_words = nombre de mots du texte contenant le plus de mots
+
+hn_rchitecture = liste des 3 architectures hn
