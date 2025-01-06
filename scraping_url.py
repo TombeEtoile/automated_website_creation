@@ -1,6 +1,7 @@
 from collections import Counter
 import json
 from stop_words import stopwords  # Assurez-vous que "stopwords" est défini dans un fichier local ou un module
+import math
 
 french_stopwords = set(stopwords)  # Convertir en set pour une recherche plus rapide
 
@@ -29,8 +30,8 @@ def set_tuples():
         word_occurrences = count_word_occurrences(all_text)
         global_word_counts.update(word_occurrences)
 
-    # Diviser chaque valeur par 3 et retourner le résultat
-    combined_keywords = [(word, count / 3) for word, count in global_word_counts.most_common(20)]
+    # Diviser chaque valeur par 3, arrondir à l'entier supérieur et retourner le résultat
+    combined_keywords = [(word, math.ceil(count / 3)) for word, count in global_word_counts.most_common(20)]
     return combined_keywords
 
 

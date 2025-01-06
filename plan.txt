@@ -5,3 +5,7 @@ combined_keywords = dictionnaire de tuple :
 total_words = nombre de mots du texte contenant le plus de mots
 
 hn_rchitecture = liste des 3 architectures hn
+
+
+Préciser le ton
+dire a chat gpt de marquer le balisage dans sa réponse
